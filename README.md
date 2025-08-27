@@ -15,4 +15,9 @@ bash <(wget --no-check-certificate -qO- 'https://raw.githubusercontent.com/Carro
 user：root
 port：22
 password：you_set_password
+
+
+#3.docker一键安装
+chmod -R 777 /root/docker_install.sh
+source docker_install.sh
 ```
