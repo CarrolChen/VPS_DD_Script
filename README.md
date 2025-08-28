@@ -25,7 +25,7 @@ source docker_install.sh
 chmod -R 777 /root/nezha_install.sh
 source nezha_install.sh
 
-#5.nezha主题前段UI美化（docker方式安装）
+#5.nezha主题前端UI美化（docker方式安装）
 a.将template里面的文件放到服务器路径：/opt/nezha/dashboard/theme-custom/template里面
 b.docker ps
 c.docker restart 上一步中哪吒的id
