@@ -14,7 +14,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/root/nezha-agent -s probe.19950628.xyz:5555 -p oU7s3sEhbPXQfZtK64
+ExecStart=/root/nezha-agent -s <已完成解析域名:5555（默认）> -p <18位密钥>
 Restart=always
 User=root
 
