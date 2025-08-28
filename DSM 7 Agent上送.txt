@@ -1,0 +1,3 @@
+cd /root
+chmod +x nezha-agent
+./nezha-agent -s <已完成解析域名:5555（默认）> -p <18位密钥>
