@@ -1,3 +1,5 @@
 cd /root
 chmod +x nezha-agent
 ./nezha-agent -s <已完成解析域名:5555（默认）> -p <18位密钥>
+
+操作可以在设置中的任务计划中进行
