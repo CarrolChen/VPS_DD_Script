@@ -1,0 +1,33 @@
+#0.FNOS是基于Debian系统定制的NAS系统，所以可以看成对Debian进行操作
+
+#1.将Agent二进制程序，放置于/root路径下
+
+#2.赋予Agent二进制程序，执行权限
+chmod +x nezha-agent
+
+#3.通过创建 systemd 服务来实现开机自启动上送数据
+vim /etc/systemd/system/nezha-agent.service
+
+[Unit]
+Description=Nezha Agent Service
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/root/nezha-agent -s probe.19950628.xyz:5555 -p oU7s3sEhbPXQfZtK64
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
+
+#4.重新加载
+systemctl daemon-reload
+systemctl enable nezha-agent.service
+systemctl start nezha-agent.service
+
+#检查状态
+systemctl status nezha-agent.service
+
+
+注：以上操作基于root用户操作
